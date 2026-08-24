@@ -1,4 +1,4 @@
-
+import time
 
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support.wait import WebDriverWait
@@ -17,3 +17,8 @@ class BasePage:
 
     def click(self, locator: Locator) -> None:
         self.wait.until(EC.element_to_be_clickable(locator)).click()
+        time.sleep(2)
+
+    def fill(self, locator: Locator, text: str) -> None:
+        self.find(locator).send_keys(text)
+        time.sleep(2)

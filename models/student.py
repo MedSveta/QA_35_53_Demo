@@ -1,0 +1,17 @@
+from  dataclasses import dataclass
+
+
+@dataclass
+class Student:
+    first_name: str | None = None
+    last_name: str | None = None
+    email: str | None = None
+    gender: str | None = None
+    mobile: str | None = None
+    date_of_birth: str | None = None
+    subject: str | None = None
+    hobbies: str | None = None
+    picture: str | None = None
+    curr_address: str | None = None
+    state: str | None = None
+    city: str | None = None
