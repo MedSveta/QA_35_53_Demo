@@ -1,8 +1,14 @@
+import time
+
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from faker import Faker
 
 from models.student import Student
+from models.enums import Gender
+
+fake = Faker()
 
 
 @pytest.fixture
@@ -12,17 +18,18 @@ def driver():
 
     driver = webdriver.Chrome(options=options)
     yield driver
+    time.sleep(2)
     driver.quit()
 
 
 @pytest.fixture
 def student() -> Student:
     return Student(
-        first_name="Anna",
-        last_name="Antonova",
-        email="anna_antonova23@gmail.com",
-        gender="female",
-        mobile="0123456789",
+        first_name=fake.first_name(),
+        last_name=fake.last_name(),
+        email=fake.email(),
+        gender=Gender.FEMALE,
+        mobile=fake.numerify("##########"),
         date_of_birth="22 Nov 1999",
         subject="Math,English,History",
         hobbies="sports",
