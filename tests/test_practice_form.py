@@ -9,5 +9,7 @@ class TestFormPage:
         time.sleep(5)
         practice_forms_page.fill_and_click_submit(student)
 
+        assert practice_forms_page.check_message() == "Thanks for submitting the form"
+
 
 

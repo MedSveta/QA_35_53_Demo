@@ -1,5 +1,5 @@
-from  dataclasses import dataclass
-from models.enums import Gender
+from  dataclasses import dataclass, field
+from models.enums import Gender, Hobbies
 
 @dataclass
 class Student:
@@ -10,7 +10,7 @@ class Student:
     mobile: str | None = None
     date_of_birth: str | None = None
     subject: str | None = None
-    hobbies: str | None = None
+    hobbies: list[Hobbies]  = field(default_factory=list)
     picture: str | None = None
     curr_address: str | None = None
     state: str | None = None

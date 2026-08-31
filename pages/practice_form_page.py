@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 
 from pages.base_page import BasePage
 from models.student import Student
-from models.enums import Gender
+from models.enums import Gender, Hobbies, StateCity
 
 
 class PracticeFormPage(BasePage):
@@ -21,6 +21,7 @@ class PracticeFormPage(BasePage):
     STATE = (By.ID, "react-select-3-input")
     CITY = (By.ID, "react-select-4-input")
     BTN_SUBMIT = (By.XPATH, "//button[text()='Submit']")
+    MODEL_TITLE = (By.ID, "example-modal-sizes-title-lg")
 
     def fill_and_click_submit(self, student: Student) -> None:
         self.fill(self.FIRST_NAME, student.first_name)
@@ -30,7 +31,14 @@ class PracticeFormPage(BasePage):
         self.fill(self.MOBILE, student.mobile)
         self._set_date_of_birth(student.date_of_birth)
         self._add_subjects(student.subject)
+        self._choose_hobbies(student.hobbies)
+        self.fill(self.CURR_ADDRESS, student.curr_address)
+        self._set_state_city(student.state, student.city)
+        self.click(self.BTN_SUBMIT)
         time.sleep(2)
+
+    def check_message(self) -> str:
+        return self.get_text(self.MODEL_TITLE)
 
     def _choose_gender(self, gender: Gender) -> None:
         self.driver.find_element(By.ID, gender.locator).click()
@@ -43,8 +51,18 @@ class PracticeFormPage(BasePage):
         field_date.send_keys(date_of_birth, Keys.ENTER)
 
     def _add_subjects(self, subjects: str) -> None:
-        field_sub= self.find(self.SUBJECTS)
+        field_sub = self.find(self.SUBJECTS)
         field_sub.click()
         for subject in subjects.split(","):
-            field_sub.send_keys(subject, Keys.ENTER)
+            field_sub.send_keys(subject)
+            time.sleep(2)
+            field_sub.send_keys(Keys.ENTER)
 
+    def _choose_hobbies(self, hobbies: list[Hobbies]) -> None:
+        for hobby in hobbies:
+            self.driver.find_element(By.ID, hobby.locator).click()
+
+    def _set_state_city(self, state: str, city: str) -> None:
+        # field_state = self.find(self.STATE)
+        self.find(self.STATE).send_keys(state, Keys.ENTER)
+        self.find(self.CITY).send_keys(city, Keys.ENTER)
