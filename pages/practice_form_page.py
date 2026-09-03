@@ -33,6 +33,7 @@ class PracticeFormPage(BasePage):
         self._add_subjects(student.subject)
         self._choose_hobbies(student.hobbies)
         self.fill(self.CURR_ADDRESS, student.curr_address)
+        self.scroll_down()
         self._set_state_city(student.state, student.city)
         self.click(self.BTN_SUBMIT)
         time.sleep(2)

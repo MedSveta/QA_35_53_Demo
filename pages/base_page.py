@@ -4,6 +4,7 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support.wait import WebDriverWait
 from  selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.action_chains import ActionChains
 
 Locator = tuple[str, str]  #(By.ID, "email")
 
@@ -25,3 +26,8 @@ class BasePage:
 
     def get_text(self, locator: Locator) -> str:
         return self.find(locator).text
+
+    def scroll_down(self, steps: int = 10, pixels: int = 500, pause: float = 0.5) -> None:
+        for _ in range(steps):
+            ActionChains(self.driver).scroll_by_amount(0, pixels).perform()
+            time.sleep(pause)

@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7631f0cf-9d73-4154-a923-fa8226d1352c" name="Changes" comment="PracticeFormTest_2">
+    <list default="true" id="7631f0cf-9d73-4154-a923-fa8226d1352c" name="Changes" comment="PracticeFormTest_3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/enums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/student.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/student.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/practice_form_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/practice_form_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_practice_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_practice_form.py" afterDir="false" />
@@ -56,6 +53,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python tests.Python tests for tests.test_practice_form.TestFormPage.executor": "Run",
     "Python tests.Python tests for tests.test_practice_form.TestFormPage.test_open_practice_form.executor": "Run",
+    "Python tests.Python tests for tests.test_practice_form.TestFormPage.test_submit_check_data_in_table.executor": "Run",
     "Python tests.Python tests in test_practice_form.py.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -72,7 +70,7 @@
       <recent name="C:\MyPythonProjects\QA_35_53_Demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test_practice_form.py">
+  <component name="RunManager" selected="Python tests.Python tests for tests.test_practice_form.TestFormPage.test_submit_check_data_in_table">
     <configuration name="Python tests for tests.test_practice_form.TestFormPage" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="QA_35_53_Demo" />
       <option name="ENV_FILES" value="" />
@@ -103,6 +101,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for tests.test_practice_form.TestFormPage.test_submit_check_data_in_table" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="QA_35_53_Demo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_practice_form.TestFormPage.test_submit_check_data_in_table&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests in test_practice_form.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="QA_35_53_Demo" />
       <option name="ENV_FILES" value="" />
@@ -120,8 +133,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in test_practice_form.py" />
+        <item itemvalue="Python tests.Python tests for tests.test_practice_form.TestFormPage.test_submit_check_data_in_table" />
         <item itemvalue="Python tests.Python tests for tests.test_practice_form.TestFormPage" />
+        <item itemvalue="Python tests.Python tests in test_practice_form.py" />
         <item itemvalue="Python tests.Python tests for tests.test_practice_form.TestFormPage.test_open_practice_form" />
       </list>
     </recent_temporary>
@@ -173,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787859143062</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="PracticeFormTest_3">
+      <option name="closed" value="true" />
+      <created>1788193870344</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1788193870344</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,6 +213,7 @@
     <MESSAGE value="Start" />
     <MESSAGE value="PracticeFormTest" />
     <MESSAGE value="PracticeFormTest_2" />
-    <option name="LAST_COMMIT_MESSAGE" value="PracticeFormTest_2" />
+    <MESSAGE value="PracticeFormTest_3" />
+    <option name="LAST_COMMIT_MESSAGE" value="PracticeFormTest_3" />
   </component>
 </project>
