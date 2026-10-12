@@ -38,7 +38,7 @@ class TestFormPage:
 
         check.equal(practice_forms_page.check_message(), TEXT_FORM)
         check.is_in(student.first_name, driver.find_element(*FIRST_NAME).text)
-        check.equal(practice_forms_page.check_message(), "TEXT_FORM")
+        #check.equal(practice_forms_page.check_message(), "TEXT_FORM")
         print("Test working")
         check.is_in(student.last_name, driver.find_element(*FIRST_NAME).text)
 
