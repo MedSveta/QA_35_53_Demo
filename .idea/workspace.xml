@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7631f0cf-9d73-4154-a923-fa8226d1352c" name="Changes" comment="Allure and GitActions">
-      <change beforePath="$PROJECT_DIR$/tests/test_practice_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_practice_form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands_for_terminal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/commands_for_terminal.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791821607152</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Allure and GitActions">
+      <option name="closed" value="true" />
+      <created>1791821752714</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1791821752714</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
